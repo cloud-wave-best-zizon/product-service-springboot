@@ -5,6 +5,11 @@
 
 ---
 
+## 1) 실행
+```bash
+docker run --rm gyuseon25/cw-produce:latest
+```
+
 ## 1) 상품 등록/수정 (Upsert)
 
 **POST** `/api/products`
