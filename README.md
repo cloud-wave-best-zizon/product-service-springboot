@@ -1,14 +1,18 @@
 # Product API 사용 가이드
 
 간단한 상품 API입니다. **업서트(등록/수정)**, **조회**, **재고 차감**을 제공합니다.  
-기본 포트: `8082`
+기본 포트: `8080`
 
 ---
 
-## 1) 실행
+## 9) 실행
 ```bash
-docker run --rm gyuseon25/cw-produce:latest
-```
+docker run -d --pull=always --name cw-product -p 8082:8080 \
+  -e AWS_REGION=ap-northeast-2 \
+  -e AWS_ACCESS_KEY_ID=YOUR_KEY \
+  -e AWS_SECRET_ACCESS_KEY=YOUR_SECRET \
+  gyuseon25/cw-product:v1
+  ```
 
 ## 1) 상품 등록/수정 (Upsert)
 
