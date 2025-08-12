@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: best-zizon
-
-aws:
-  region: ap-northeast-2
-
-server:
-  port: 8080
